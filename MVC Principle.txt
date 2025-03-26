@@ -1,0 +1,52 @@
+/photobooth-booking/          # Root directory
+│── /app/                     # Main application logic (MVC)
+│   │── /controllers/         # Business logic (handles user requests)
+│   │   ├── AdminController.php
+│   │   ├── ClientController.php
+│   │   ├── BookingController.php
+│   │   ├── PaymentController.php
+│   │   ├── ChatController.php
+│   │── /models/              # Database models (SQL interactions)
+│   │   ├── User.php
+│   │   ├── Booking.php
+│   │   ├── Payment.php
+│   │── /views/               # HTML + PHP templates
+│   │   ├── /admin/          # Admin views
+│   │   │   ├── dashboard.php
+│   │   │   ├── bookings.php
+│   │   │   ├── payments.php
+│   │   │   ├── users.php
+│   │   │   ├── chat.php
+│   │   ├── /client/         # Client views
+│   │   │   ├── dashboard.php
+│   │   │   ├── booking.php
+│   │   │   ├── payment.php
+│   │   │   ├── history.php
+│   │   │   ├── chat.php
+│── /public/                  # Publicly accessible files
+│   │── /assets/              # CSS, JS, fonts
+│   │   ├── css/
+│   │   ├── js/
+│   │── /uploads/             # Image & file uploads
+│   │── /images/              # General images
+│   │── /icons/               # Icons
+│   │── /gallery/             # Event gallery images
+│── /config/                  # Configuration files
+│   │── config.php            # Database & app settings
+│   │── routes.php            # Handles URL routing
+│── /database/                # Database-related files
+│   │── db_connect.php        # Database connection
+│   │── migrations/           # SQL migration scripts
+│── /helpers/                 # Utility functions
+│   │── functions.php
+│   │── email.php             # Email notifications
+│── /partials/                # Reusable components
+│   │── header.php
+│   │── footer.php
+│   │── sidebar.php
+│── index.php                 # Main entry point (landing page)
+│── admin.php                 # Admin panel entry
+│── client.php                # Client dashboard entry
+│── routes.php                # Main routing file
+│── .htaccess                 # URL rewriting (optional)
+│── README.md                 # Documentation
